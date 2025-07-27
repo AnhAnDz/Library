@@ -1,0 +1,3 @@
+--// This file was protected by XHider discord.gg/UWPPnTZBfD
+
+hookfunction(require((game:GetService("ReplicatedStorage")).Effect.Container.Respawn),function() end)hookfunction((require((game:GetService("ReplicatedStorage")):WaitForChild("GuideModule"))).ChangeDisplayedNPC,function() end)spawn(function()for G,y in pairs(game:GetDescendants())do if y:IsA("Texture")then y.Texture=""elseif y:IsA("BasePart")and y.Material==Enum.Material.Water then y.Material=Enum.Material.SmoothPlastic end end for G,y in pairs(game.Players.LocalPlayer.PlayerScripts:GetDescendants())do local a={"WaterBlur";"WaterEffect";"WaterColorCorrection","WaterCFrame";"MirageFog"}if table.find(a,y.Name)then y:Destroy()end end end)
